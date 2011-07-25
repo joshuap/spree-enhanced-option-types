@@ -33,15 +33,6 @@ module SpreeEnhancedOptionTypes
             end
           end
         end
-
-        Admin::PrototypesController.class_eval do
-          before_filter :load_sortable
-
-          def load_sortable
-            render_to_string :partial => 'sortable_header'
-          end
-        end
-
       }
     end
 
